@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'SUPER PEACE';
+    src: url('Assets/SUPER_PEACE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    display: flex; 
+    align-items: center;    
+    justify-content: center; 
+    height: 100vh;
+    margin: 0;
+    background: 
+        linear-gradient(45deg, hsl(0, 96%, 28%) 25%, transparent 25%) 0 0,
+        linear-gradient(-45deg, hsl(0, 96%, 28%) 25%, transparent 25%) 0 0,
+        linear-gradient(45deg, transparent 75%, hsl(0, 96%, 28%) 75%) 0 0,
+        linear-gradient(-45deg, transparent 75%, hsl(0, 96%, 28%) 75%) 0 0;
+    background-size: 70px 70px;
+    background-repeat: repeat;
+}
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+#pizzaContainer {
+    margin-bottom: 20px; 
+}
+#gameButtons {
+    display: flex;
+    gap: 10px; 
+}
+#gameBoard{
+    display: inline-block;
+}
+#scoreText{
+    text-align: center;
+    font-family: "consolas", monospace;
+    font-size: 100px;
+    background-color:rgb(110, 20, 220);
+    border-radius: 15px;
+    margin-top: 20px; 
+}
+#resetBtn{
+    font-family: monospace;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid;
+    border-radius: 15px;
+    background-color:hsla(57, 64%, 68%, 0.85);
+    cursor: url('Assets/pizza-cutter.png') 16 16, auto;
+}
+#pauseBtn{
+    font-family: monospace;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid;
+    border-radius: 15px;
+    background-color:hsla(0, 72%, 83%, 0.85);
+    cursor: url('Assets/pizza-cutter.png') 16 16, auto;
+}
+#compBtn{
+    font-family: monospace;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid;
+    border-radius: 15px;
+    background-color:hsla(204, 2%, 51%, 0.85);
+}
+#resetBtn:hover,
+#pauseBtn:hover,
+#compBtn:hover {
+    background-color: hsl(136, 69%, 58%);
+    color: rgb(10, 90, 5);
+    cursor: url('Assets/pizza-cutter.cur') 16 16, auto;
+}
+
+#broccoliPong {
+    display: relative;
+    text-align: center;
+    font-family: 'SUPER PEACE', sans-serif;
+    font-size: 75px;
+    color: #056112; 
+    text-shadow: 3px 3px 5px rgba(255,255,255,0.7); 
+    margin-right: 30px;
+    background-color: hsl(27, 50%, 32%);
+    border: 10px solid hsl(0, 0%, 3%);
+    padding: 10px;
+}
+h2 {
+    font-family: monospace;
+    font-size: 25px;
+    margin-left: 15px; 
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 10px;
+    border: 5px solid black;
+}
+#gamer, #dog {
+    font-family: monospace;
+    font-size: 50px;
+    border-radius: 15px;
+    padding: 5px;
+    border: 5px solid black;
+    padding: 5px;
+}
+#gamer{
+    background-color: hsl(30, 75%, 57%);
+}
+#dog{
+    background-color: hsl(213, 58%, 43%);
+}
+#scoreText {
+    text-align: center;
+    font-family: "consolas", monospace;
+    font-size: 100px;
+    background-color: hsl(0, 0%, 3%);
+    border: 10px solid hsl(27, 50%, 32%);
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+#scoreContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;       
+    max-width: 600px;  
+    margin-top: 20px;
+    padding: 0 20px;
+}
